@@ -94,7 +94,7 @@ const platformCommand = Platform.select({
 
 export const DemoScreen = observer(function DemoScreen() {
   const navigation = useNavigation()
-  const goBack = () => navigation.goBack()
+  const goBack = () => navigation.navigate("home")
 
   const demoReactotron = React.useMemo(
     () => async () => {

@@ -37,9 +37,9 @@ export function MainNavigator() {
         headerShown: false,
       }}
     >
-      <Stack.Screen name="welcome" component={WelcomeScreen} />
-      <Stack.Screen name="demo" component={DemoScreen} />
-      <Stack.Screen name="demoList" component={DemoListScreen} />
+      <Stack.Screen name="welcome"  component={WelcomeScreen} options={{ title: "Welcome Baby"}} />
+      <Stack.Screen name="demo" component={DemoScreen} options={{ title: "Demo Screen"}} />
+      <Stack.Screen name="demoList" component={DemoListScreen} options={{ title: "Rick and Morty Characters"}} />
     </Stack.Navigator>
   )
 }
